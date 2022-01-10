@@ -3,6 +3,7 @@ from PIL import Image
 import cv2
 import numpy as np
 import string
+
 model = load_model(r"Sign_Language_model.h5")
 img = cv2.imread('image.jpg', cv2.IMREAD_GRAYSCALE)
 resize_img = cv2.resize(img, (80, 80))
